@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class E2EHeroKuApp {
+public class Basic1E2EHeroKuApp {
 
 	public static void main(String[] args) {
 		
@@ -19,13 +19,10 @@ public class E2EHeroKuApp {
 		driver.findElement(By.id("txt-password")).sendKeys("ThisIsNotAPassword");
 		driver.findElement(By.id("btn-login")).click();
 		
-		driver.findElement(By.id("combo_facility")).click();
-		driver.findElement(By.xpath("//option[@value='Seoul CURA Healthcare Center'][3]"));
-		
-//	driver.findElement(By.id("chk_hospotal_readmission")).click();
-		
-		driver.findElement(By.id("btn-login")).click();
-		
+		driver.findElement(By.id("txt_visit_date")).sendKeys("22/10/2024");
+		driver.findElement(By.id("btn-book-appointment")).click();
+
+		System.out.println(driver.findElement(By.cssSelector("div h2")).getText());
 		
 	}
 
