@@ -10,7 +10,7 @@ public class E2ESauceDemo {
 	public static void main(String[] args) {
 		
 		
-		ChromeDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.saucedemo.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.findElement(By.id("user-name")).sendKeys("standard_user"); //CSS used ID		
