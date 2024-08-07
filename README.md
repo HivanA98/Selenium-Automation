@@ -1,7 +1,7 @@
 # Selenium Automation
 - Java
 - Python
-- Javascript
+- JavaScript
 ##
 
 Java
